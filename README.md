@@ -7,6 +7,18 @@ It includes:
 - a demo site (located in `demo/`) that installs the theme
 - a Yarn workspaces configuration so the theme and demo can be worked on simultaneously
 
+## Environment Variables
+
+To run, this application needs the following environment variables:
+  - TWITTER_CONSUMER_KEY
+  - TWITTER_CONSUMER_SECRET
+  - TWITTER_BEARER_TOKEN
+
+_For an example, see `.env.example`_
+
+These can either be set in the build machine's environment variables, or set using a `.env.<node_env>` file, where `node_env` is either `develop` or `production`.
+
+
 ## How to use this repo
 
 **NOTE:** Make sure to replace `USERNAME` with your GitHub username and `THEMENAME` with your theme name.
