@@ -1,4 +1,6 @@
-module.exports = (options) => ({
+module.exports = ({ twitterCredentials }) => {
+
+  return {
   siteMetadata: {
     title: "Gatsby Theme Jam Example Submission",
   },
@@ -13,11 +15,7 @@ module.exports = (options) => ({
     {
       resolve: `gatsby-source-twitter`,
       options: {
-        credentials: {
-          consumer_key: "consumer_key",
-          consumer_secret: "consumer_secret",
-          bearer_token: "bearer_token",
-        },
+        credentials: twitterCredentials,
         queries: {
           nameofthequery: {
             endpoint: "statuses/user_timeline",
@@ -39,4 +37,4 @@ module.exports = (options) => ({
       }
     }
   ],
-})
+}}
