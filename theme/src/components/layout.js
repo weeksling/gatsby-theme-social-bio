@@ -34,7 +34,6 @@ const Layout = ({ children }) => {
         <Container>
           {children}
           {InstagramFeedMock.map(({ node }) => {
-            console.log("original: ", node.original)
             return <InstagramImage alt={node.caption} src={node.original} />
           })}
         </Container>
