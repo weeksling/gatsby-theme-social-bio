@@ -3,5 +3,13 @@
   "workspaces": [
     "theme",
     "demo"
-  ]
+  ],
+  "scripts": {
+    "start": "yarn workspace demo start",
+    "build": "yarn workspace demo build"
+  },
+  "dependencies": {
+    "site": "./demo",
+    "gatsby-theme-social-bio": "./theme"
+  }
 }
