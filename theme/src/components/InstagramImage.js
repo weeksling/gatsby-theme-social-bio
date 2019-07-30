@@ -8,16 +8,18 @@ const InstagramImg = styled.img`
   ${mq({
     margin: "auto",
     border: `0.5px solid ${COLORS.INSTAGRAM.BORDER}`,
+    width: "350px",
   })}
 `
 
 const InstagramImageWrapper = styled.div`
   ${mq({
-    padding: "10px 10px 20px 10px",
+    padding: "20px 20px 35px 20px",
     backgroundColor: COLORS.INSTAGRAM.BACKGROUND,
-    maxWidth: "150px",
+    width: "350px",
+    height: "400px",
     boxShadow: `3px 3px 10px -8px ${COLORS.INSTAGRAM.SHADOW}`,
-    margin: "10px",
+    margin: "20px",
   })}
 `
 
